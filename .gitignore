@@ -10,3 +10,5 @@ _ReSharper.*
 *~
 *.log
 **/*.snk
+fubu-content/
+source/packages/*/
