@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyApplication", "MyApplication\MyApplication.csproj", "{B2349760-E444-49B1-8E8C-37EB1AC53D91}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RemindersPackage", "RemindersPackage\RemindersPackage.csproj", "{A94B82AF-77D8-4947-8A97-4DA85C112C55}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +15,10 @@ Global
 		{B2349760-E444-49B1-8E8C-37EB1AC53D91}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B2349760-E444-49B1-8E8C-37EB1AC53D91}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B2349760-E444-49B1-8E8C-37EB1AC53D91}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A94B82AF-77D8-4947-8A97-4DA85C112C55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A94B82AF-77D8-4947-8A97-4DA85C112C55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A94B82AF-77D8-4947-8A97-4DA85C112C55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A94B82AF-77D8-4947-8A97-4DA85C112C55}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

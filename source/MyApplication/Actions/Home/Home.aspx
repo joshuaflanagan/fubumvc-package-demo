@@ -1,12 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" Inherits="MyApplication.Actions.Home.Home" %>
-<!doctype html>
-<html>
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>My Application</title>
-</head>
-<body>
+﻿<%@ Page Language="C#" AutoEventWireup="true" Inherits="MyApplication.Actions.Home.Home" MasterPageFile="~/Shared/Main.master"  %>
+<asp:Content ID="Content1" ContentPlaceHolderID="Content" runat="server">
 Welcome
-</body>
-</html>
+</asp:Content>

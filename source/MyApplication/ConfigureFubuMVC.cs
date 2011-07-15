@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using Bottles;
 using FubuMVC.Core;
 using FubuMVC.WebForms;
 using MyApplication.Actions;
@@ -38,6 +39,8 @@ namespace MyApplication
             // on model type, view name, and namespace
             Views.TryToAttachWithDefaultConventions();
             Import<WebFormsEngine>();
+
+            PackageRegistry.AssertNoFailures();
         }
     }
 }
