@@ -15,6 +15,8 @@ namespace MyApplication
         {
             var httpVerbs = new HashSet<string>(StringComparer.InvariantCultureIgnoreCase){"GET", "POST", "PUT", "HEAD"};
 
+            Applies.ToThisAssembly().ToAllPackageAssemblies();
+
             // This line turns on the basic diagnostics and request tracing
             IncludeDiagnostics(true);
 
@@ -39,8 +41,6 @@ namespace MyApplication
             // on model type, view name, and namespace
             Views.TryToAttachWithDefaultConventions();
             Import<WebFormsEngine>();
-
-            PackageRegistry.AssertNoFailures();
         }
     }
 }

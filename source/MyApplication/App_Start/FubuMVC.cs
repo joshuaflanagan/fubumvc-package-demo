@@ -1,4 +1,6 @@
+using System.Collections.Generic;
 using System.Web.Routing;
+using Bottles;
 using FubuMVC.Core;
 using FubuMVC.StructureMap;
 using StructureMap;
@@ -25,8 +27,14 @@ namespace MyApplication.App_Start
                 // but FubuMVC just adds configuration to an IoC container so
                 // that you can use the native registration API's for your
                 // IoC container for the rest of your application
-                .StructureMap(new Container())
+                .StructureMap(()=> new Container(x => x.Scan(s =>
+                {
+                    PackageRegistry.PackageAssemblies.Each(s.Assembly);
+                    s.LookForRegistries();
+                })))
                 .Bootstrap(RouteTable.Routes);
+
+            PackageRegistry.AssertNoFailures();
         }
     }
 }

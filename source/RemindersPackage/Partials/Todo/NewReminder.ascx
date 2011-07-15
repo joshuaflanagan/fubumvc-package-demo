@@ -5,4 +5,6 @@
 <%: this.Edit(m=>m.RecipientEmail) %>
 <br />
 <%: this.Edit(m=>m.DaysBeforeDue) %>
+<br />
+<%: this.Edit(m=>m.NumberOfTimes) %>
 </div>
