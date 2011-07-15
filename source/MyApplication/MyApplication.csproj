@@ -79,19 +79,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Index.aspx" />
-    <Content Include="MyProfile.aspx" />
+    <Content Include="Actions\Home\Home.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Actions\ActionUrlPolicy.cs" />
     <Compile Include="App_Start\FubuMVC.cs" />
     <Compile Include="ConfigureFubuMVC.cs" />
-    <Compile Include="HomeController.cs" />
-    <Compile Include="MyProfile.aspx.cs">
-      <DependentUpon>MyProfile.aspx</DependentUpon>
+    <Compile Include="Actions\Home\HomeAction.cs">
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="ProfileController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -1,10 +1,10 @@
 using FubuMVC.WebForms;
 
-namespace MyApplication
+namespace MyApplication.Actions.Home
 {
-    public class HomeController
+    public class HomeAction
     {
-        public HomeViewModel Index()
+        public HomeViewModel Get()
         {
             return new HomeViewModel();
         }
@@ -14,7 +14,7 @@ namespace MyApplication
     {
     }
 
-    public class Index : FubuPage<HomeViewModel>
+    public class Home : FubuPage<HomeViewModel>
     {
     }
 }

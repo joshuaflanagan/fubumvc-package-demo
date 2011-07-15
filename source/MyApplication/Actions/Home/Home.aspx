@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" Inherits="MyApplication.Index" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" Inherits="MyApplication.Actions.Home.Home" %>
 <!doctype html>
 <html>
 <head>
