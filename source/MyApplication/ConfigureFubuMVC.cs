@@ -1,4 +1,5 @@
 using FubuMVC.Core;
+using FubuMVC.WebForms;
 
 namespace MyApplication
 {
@@ -15,6 +16,7 @@ namespace MyApplication
 
             // Policies
             Routes
+                .HomeIs<HomeController>(x => x.Index())
                 .IgnoreControllerNamesEntirely()
                 .IgnoreMethodSuffix("Html")
                 .RootAtAssemblyNamespace();
@@ -22,6 +24,7 @@ namespace MyApplication
             // Match views to action methods by matching
             // on model type, view name, and namespace
             Views.TryToAttachWithDefaultConventions();
+            Import<WebFormsEngine>();
         }
     }
 }
