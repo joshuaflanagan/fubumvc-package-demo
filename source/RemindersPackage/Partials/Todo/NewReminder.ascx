@@ -1,4 +1,4 @@
-﻿<%@ Control Language="C#" Inherits="RemindersPackage.Partials.Todo.NewReminder" %>
+<%@ Control Language="C#" Inherits="RemindersPackage.Partials.Todo.NewReminder, RemindersPackage" %>
 <%@ Import Namespace="FubuMVC.Core.UI" %>
 
 <div style="border: 1px solid black;">
