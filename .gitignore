@@ -13,5 +13,5 @@ _ReSharper.*
 fubu-content/
 source/packages/*/
 .bottle-alias
-reminders.zip
+*.zip
 .links
